@@ -34,3 +34,5 @@ Session.vim
 
 # Compiled files
 *.luac
+
+.DS_Store
