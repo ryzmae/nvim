@@ -1,0 +1,36 @@
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+# Neovim swap files
+*.swp
+*.swo
+*.swn
+
+# Neovim backup files
+*~
+
+# Vim / Neovim session files
+Session.vim
+
+# Plugin manager directories
+# For Packer:
+./lua/packer_compiled.lua
+./plugin/packer_compiled.lua
+./pack/packer/start/*
+
+# For lazy.nvim:
+.lazy/
+
+# For Plug:
+./plugged/
+
+# For nvim-lspconfig caches
+.lsp/
+
+# Compiled files
+*.luac
