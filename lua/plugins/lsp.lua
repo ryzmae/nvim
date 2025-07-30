@@ -139,6 +139,17 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = function()
+      vim.diagnostic.config({
+        signs = {
+          text = {
+            [vim.diagnostic.severity.ERROR] = " ",
+            [vim.diagnostic.severity.WARN] = " ",
+            [vim.diagnostic.severity.HINT] = "󰠠 ",
+            [vim.diagnostic.severity.INFO] = " ",
+          },
+        },
+      })
+
       local keys = require("lazyvim.plugins.lsp.keymaps").get()
       vim.list_extend(keys, {
         {
