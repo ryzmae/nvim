@@ -9,25 +9,12 @@
 --   },
 -- }
 
-return {
-  { "Mofiqul/vscode.nvim" },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "vscode",
-    },
-  },
-}
-
 -- return {
---   {
---     "mcchrish/zenbones.nvim",
---     dependencies = { "rktjmp/lush.nvim" },
---   },
+--   { "Mofiqul/vscode.nvim" },
 --   {
 --     "LazyVim/LazyVim",
 --     opts = {
---       colorscheme = "zenbones",
+--       colorscheme = "vscode",
 --     },
 --   },
 -- }
@@ -115,15 +102,15 @@ return {
 --   },
 -- }
 --
--- return {
---   {
---     "craftzdog/solarized-osaka.nvim",
---     priority = 1000,
---     opts = {
---       transparent = true,
---     },
---     config = function()
---       vim.cmd.colorscheme("solarized-osaka")
---     end,
---   },
--- }
+return {
+  {
+    "craftzdog/solarized-osaka.nvim",
+    priority = 1000,
+    opts = {
+      transparent = true,
+    },
+    config = function()
+      vim.cmd.colorscheme("solarized-osaka")
+    end,
+  },
+}
