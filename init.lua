@@ -11,3 +11,4 @@ vim.o.laststatus = 3
 
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
+require("ryzm.find_replace").setup()
