@@ -27,6 +27,14 @@ vim.keymap.set("n", "<leader>bd", function()
   end
 end, { desc = "Delete all buffers" })
 
+local diagnostic = vim.diagnostic
+
+-- Next diagnostic (any severity)
+vim.keymap.set("n", "<leader>dn", diagnostic.goto_next, { desc = "Next Diagnostic" })
+
+-- Previous diagnostic (any severity)
+vim.keymap.set("n", "<leader>dp", diagnostic.goto_prev, { desc = "Prev Diagnostic" })
+
 -- Keybinds for LSP
 -- vim.keymap.set({ "i", "n", "v", "c" }, "<Up>", "<NOP>", { silent = true })
 -- vim.keymap.set({ "i", "n", "v", "c" }, "<Down>", "<NOP>", { silent = true })

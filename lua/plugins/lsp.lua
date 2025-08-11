@@ -164,21 +164,4 @@ return {
       })
     end,
   },
-  {
-    "hrsh7th/nvim-cmp",
-    dependencies = {
-      "hrsh7th/cmp-nvim-lsp", -- This is the crucial LSP source
-      -- Other sources like snippets, path, buffer, etc.
-    },
-    opts = function(_, opts)
-      -- Configure nvim-cmp sources
-      opts.sources = require("cmp.config").sources({
-        { name = "nvim_lsp" }, -- This enables LSP completions
-        { name = "luasnip" }, -- If you use snippets
-        { name = "buffer" },
-        { name = "path" },
-      }, {})
-      return opts
-    end,
-  },
 }
