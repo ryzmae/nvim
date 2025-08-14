@@ -1,11 +1,17 @@
 return {
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    priority = 1000,
+    "datsfilipe/vesper.nvim",
     lazy = false,
+    -- @type string
     opts = {
-      flavour = "mocha", -- latte, frappe, macchiato, mocha
+      transparent = true, -- Enable transparent background
+      italics = {
+        comments = true, -- Boolean: Italicizes comments
+        keywords = false, -- Boolean: Italicizes keywords
+        functions = true, -- Boolean: Italicizes functions
+        strings = false, -- Boolean: Italicizes strings
+        variables = false, -- Boolean: Italicizes variables
+      },
     },
   },
 }
