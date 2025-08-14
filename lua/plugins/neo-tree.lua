@@ -7,6 +7,78 @@ return {
       "MunifTanjim/nui.nvim", -- For UI components
     },
     opts = {
+      -- Use this table to override the default icons and colors
+      override = {
+        -- TypeScript
+        ["ts"] = {
+          icon = "󰛦", -- The icon for TypeScript
+          color = "#519de0", -- The color used in the VS Code theme
+          name = "typescript",
+        },
+        ["d.ts"] = {
+          icon = "󰛦",
+          color = "#519de0", -- A similar green is used for some typescript files, but a more common green is #54bf93 or similar.
+          name = "d.ts",
+        },
+        -- TSX
+        ["tsx"] = {
+          icon = "󰛦",
+          color = "#519de0",
+          name = "tsx",
+        },
+        -- Bun files
+        ["bun"] = {
+          icon = "",
+          color = "#fbf0df", -- The color of the bun icon
+          name = "bun",
+        },
+        ["bun.lockb"] = {
+          icon = "",
+          color = "#fbf0df",
+          name = "bun.lockb",
+        },
+        ["bunfig.toml"] = {
+          icon = "",
+          color = "#fbf0df",
+          name = "bunfig.toml",
+        },
+        -- Rust
+        ["rs"] = {
+          icon = "",
+          color = "#dea584",
+          name = "rust",
+        },
+        -- .env
+        ["env"] = {
+          icon = "󰛢",
+          color = "#f69b1a",
+          name = "env",
+        },
+        -- JSON
+        ["json"] = {
+          icon = "󰈄",
+          color = "#519de0",
+          name = "json",
+        },
+        -- Golang
+        ["go"] = {
+          icon = "󰟓",
+          color = "#52c1e1",
+          name = "go",
+        },
+        -- HTMX
+        ["htmx"] = {
+          icon = "󰄩",
+          color = "#52c1e1",
+          name = "htmx",
+        },
+        -- Lua
+        ["lua"] = {
+          icon = "󰢱",
+          color = "#52c1e1",
+          name = "lua",
+        },
+      },
       default_component_configs = {
         icon = {
           -- Rounded/circular folder icons
@@ -16,18 +88,18 @@ return {
           folder_empty_open = "",
           default = "", -- Rounded/circular file icon
 
-          -- Per-filetype (rounded/circular where possible)
-          file = {
-            ["ts"] = "", -- TypeScript (rounded)
-            ["tsx"] = "", -- TSX (same as TS, rounded)
-            ["js"] = "", -- JavaScript (slightly rounded)
-            ["jsx"] = "", -- JSX (React, rounded)
-            ["py"] = "", -- Python (rounded snake)
-            ["rs"] = "", -- Rust (cog, rounded)
-            ["go"] = "", -- Go (gopher, rounded)
-            ["json"] = "󰘦", -- JSON (rounded, nf-md-braces_box)
-            ["env"] = "󰸞", -- .env (rounded, nf-md-leaf_circle)
-          },
+          -- -- Per-filetype (rounded/circular where possible)
+          -- file = {
+          --   ["ts"] = "", -- TypeScript (rounded)
+          --   ["tsx"] = "", -- TSX (same as TS, rounded)
+          --   ["js"] = "", -- JavaScript (slightly rounded)
+          --   ["jsx"] = "", -- JSX (React, rounded)
+          --   ["py"] = "", -- Python (rounded snake)
+          --   ["rs"] = "", -- Rust (cog, rounded)
+          --   ["go"] = "", -- Go (gopher, rounded)
+          --   ["json"] = "󰘦", -- JSON (rounded, nf-md-braces_box)
+          --   ["env"] = "󰸞", -- .env (rounded, nf-md-leaf_circle)
+          -- },
         },
       },
       filesystem = {
