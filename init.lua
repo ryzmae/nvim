@@ -12,4 +12,5 @@ vim.o.laststatus = 3
 require("config.lazy")
 require("ryzm.find_replace").setup()
 
-vim.cmd.colorscheme('vesper')
+vim.cmd.colorscheme("catppuccin-mocha")
+vim.lsp.inlay_hint.enable(true)
